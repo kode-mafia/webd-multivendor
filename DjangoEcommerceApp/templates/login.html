@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+
+    <link rel="stylesheet" href="./css/glide.core.min.css" />
+    <link rel="stylesheet" href="./css/glide.theme.min.css" />
+
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Login Page</title>
+</head>
+
+<body>
+
+    <section class="max-w-600 mx-auto d-flex flex-column p-4">
+        <div class="text-center mb-3">
+            <a href="./index.html">
+                <img class="logo" src="./images/logo-white.JPG" alt="logo" />
+            </a>
+        </div>
+        <div class="text-center">
+            <a href="./vendor.html" class="text-decoration-none custom-text-black custom-fw-500">Vendor Login</a>
+        </div>
+        <p class="text-center">If you have an account, sign in with your email address.</p>
+
+        <div class="card custom-bg-light shadow-lg border-0">
+            <div class="card-body px-5 py-4 pb-5">
+                <form>
+                    <div class="mb-3">
+                        <label for="emailField" class="form-label custom-fs-15 custom-fw-600">Email *</label>
+                        <input type="email" class="form-control custom-br-10 border border-1 custom-bc-black" id="emailField" aria-describedby="email">
+                        <div id="emailField-msg" class="form-text visually-hidden">Show error message here</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="passwordField" class="form-label custom-fs-15 custom-fw-600">Password *</label>
+                        <input type="password" class="form-control custom-br-10 border border-1 custom-bc-black" id="passwordField">
+                        <div id="passwordField-msg" class="form-text visually-hidden">Show error message here</div>
+                    </div>
+
+                    <div class="text-end"><a href="./forgot-password.html" class="text-decoration-none custom-text-black custom-fs-15">Forgot Your Password ?</a></div>
+
+                    <button type="submit" class="mb-4 mt-3 w-100 btn custom-bg-secondary custom-fw-600 custom-fs-15 custom-text-white custom-br-10">Sign in</button>
+                </form>
+                <div>
+                    <a href="#" class="w-100 btn custom-bg-primary custom-fw-600 custom-fs-15 custom-text-white custom-br-10">New Seller? Start Here</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ? FOOTER -->
+    <section>
+        <hr>
+        <p class="custom-text-black custom-fs-15 custom-fw-500 text-center">&copy; 2021 Baratodeal Pvt Ltd</p>
+    </section>
+
+    <script src="./js/bootstrap.bundle.js"></script>
+    <script src="./js/glide.min.js"></script>
+    <!-- ? CUSTOM SCRIPT -->
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

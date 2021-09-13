@@ -1,0 +1,990 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+
+    <link rel="stylesheet" href="./css/glide.core.min.css" />
+    <link rel="stylesheet" href="./css/glide.theme.min.css" />
+
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>FAQ Page</title>
+</head>
+
+<body>
+    <!-- ? NAVBAR -->
+    <!-- ? DESKTOP NAVBAR -->
+    <section class="d-none d-md-block">
+        <div class="border border-1 py-2">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-5">
+                        <div class="d-flex align-items-center">
+                            <p class="m-0 me-2 custom-fw-500 custom-fs-10">Connect with us</p>
+                            <a href="#" class="m-0 text-decoration-none me-2">
+                                <svg width="15" height="15" viewBox="0 0 448 446" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M448 224C448 100.3 347.7 0 224 0C100.3 0 0 100.3 0 224C0 335.8 81.9 428.47 189 445.29V288.77H132.11V224H189V174.65C189 118.52 222.45 87.49 273.61 87.49C298.12 87.49 323.76 91.87 323.76 91.87V147H295.5C267.69 147 258.99 164.26 258.99 182V224H321.11L311.19 288.77H259V445.31C366.1 428.5 448 335.83 448 224V224Z"
+                                        fill="#35AFD6" />
+                                </svg>
+                            </a>
+                            <a href="#" class="m-0 text-decoration-none me-2">
+                                <svg width="15" height="15" viewBox="0 0 448 448" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M317.33 37.33C342.063 37.4039 365.761 47.2616 383.25 64.7502C400.738 82.2389 410.596 105.937 410.67 130.67V317.33C410.596 342.063 400.738 365.761 383.25 383.25C365.761 400.738 342.063 410.596 317.33 410.67H130.67C105.937 410.596 82.2389 400.738 64.7502 383.25C47.2616 365.761 37.4039 342.063 37.33 317.33V130.67C37.4039 105.937 47.2616 82.2389 64.7502 64.7502C82.2389 47.2616 105.937 37.4039 130.67 37.33H317.33V37.33ZM317.33 0H130.67C58.8 0 0 58.8 0 130.67V317.33C0 389.2 58.8 448 130.67 448H317.33C389.2 448 448 389.2 448 317.33V130.67C448 58.8 389.2 0 317.33 0V0Z"
+                                        fill="#FF00F7" />
+                                    <path
+                                        d="M345.33 130.67C339.792 130.67 334.379 129.028 329.774 125.951C325.17 122.874 321.581 118.501 319.461 113.385C317.342 108.269 316.788 102.639 317.868 97.2074C318.948 91.7759 321.615 86.7868 325.531 82.8709C329.447 78.9551 334.436 76.2883 339.868 75.2079C345.299 74.1276 350.929 74.6821 356.045 76.8013C361.162 78.9206 365.534 82.5094 368.611 87.114C371.688 91.7185 373.33 97.1321 373.33 102.67C373.338 106.349 372.619 109.994 371.215 113.394C369.81 116.795 367.748 119.885 365.147 122.487C362.545 125.088 359.455 127.15 356.055 128.555C352.654 129.959 349.009 130.678 345.33 130.67V130.67ZM224 149.33C238.768 149.33 253.205 153.709 265.484 161.914C277.764 170.119 287.335 181.781 292.986 195.425C298.638 209.069 300.116 224.083 297.235 238.567C294.354 253.052 287.242 266.357 276.8 276.8C266.357 287.242 253.052 294.354 238.567 297.235C224.083 300.116 209.069 298.638 195.425 292.986C181.781 287.334 170.119 277.764 161.914 265.484C153.709 253.205 149.33 238.768 149.33 224C149.351 204.203 157.225 185.222 171.224 171.224C185.223 157.225 204.203 149.351 224 149.33V149.33ZM224 112C201.849 112 180.194 118.569 161.776 130.875C143.358 143.182 129.003 160.674 120.526 181.139C112.049 201.605 109.831 224.124 114.152 245.85C118.474 267.576 129.141 287.532 144.804 303.196C160.468 318.859 180.424 329.526 202.15 333.848C223.876 338.169 246.395 335.951 266.861 327.474C287.326 318.997 304.818 304.642 317.125 286.224C329.431 267.805 336 246.151 336 224C336 194.296 324.2 165.808 303.196 144.804C282.192 123.8 253.704 112 224 112V112Z"
+                                        fill="#FF00F7" />
+                                </svg>
+                            </a>
+                            <a href="#" class="m-0 text-decoration-none me-2">
+                                <svg width="15" height="15" viewBox="0 0 512 385" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M508.646 84.79C508.646 39.79 475.546 3.59 434.646 3.59C379.246 0.999996 322.746 0 265.006 0H247.006C189.406 0 132.806 0.999999 77.4061 3.6C36.6061 3.6 3.50608 40 3.50608 85C1.00608 120.59 -0.0539189 156.19 0.00608108 191.79C-0.0939189 227.39 1.03941 263.023 3.40608 298.69C3.40608 343.69 36.5061 380.19 77.3061 380.19C135.506 382.89 195.206 384.09 255.906 383.99C316.706 384.19 376.239 382.923 434.506 380.19C475.406 380.19 508.506 343.69 508.506 298.69C510.906 262.99 512.006 227.39 511.906 191.69C512.133 156.09 511.046 120.457 508.646 84.79ZM207.006 289.89V93.39L352.006 191.59L207.006 289.89Z"
+                                        fill="#FF0000" />
+                                </svg>
+                            </a>
+                            <a href="#" class="m-0 text-decoration-none me-2">
+                                <svg width="15" height="15" viewBox="0 0 480 385" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M480 45.5002C461.995 53.3237 442.944 58.478 423.45 60.8002C443.937 48.804 459.343 29.7458 466.78 7.20017C447.411 18.5261 426.256 26.4729 404.22 30.7002C394.941 20.9755 383.781 13.2392 371.419 7.96162C359.057 2.68402 345.751 -0.0246733 332.31 0.000169344C277.89 0.000169344 233.85 43.4002 233.85 96.9002C233.811 104.342 234.664 111.761 236.39 119C197.367 117.171 159.155 107.216 124.2 89.7727C89.2444 72.3294 58.3149 47.7818 33.39 17.7002C24.6457 32.4414 20.0213 49.2606 20 66.4002C20 100 37.53 129.7 64 147.1C48.3173 146.728 32.9559 142.577 19.22 135V136.2C19.22 183.2 53.22 222.3 98.22 231.2C89.7578 233.456 81.0377 234.599 72.28 234.6C66.0658 234.611 59.8657 234.008 53.77 232.8C66.28 271.3 102.69 299.3 145.82 300.1C110.774 327.109 67.7462 341.708 23.5 341.6C15.6462 341.589 7.79966 341.121 0 340.2C45.0118 368.942 97.3345 384.146 150.74 384C332.1 384 431.18 236.3 431.18 108.2C431.18 104 431.07 99.8002 430.87 95.7002C450.101 82.0208 466.738 65.0213 480 45.5002V45.5002Z"
+                                        fill="#089ECD" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-7">
+                        <div class="d-flex align-items-center w-100 justify-content-end">
+                            <a class="custom-text-black text-decoration-none custom-fs-10" href="#">SELL ON
+                                BARATODEAL</a>
+                            <span class="mx-2">|</span>
+                            <a class="custom-text-black text-decoration-none custom-fs-10" href="#">HELP CENTER</a>
+                            <span class="mx-2">|</span>
+                            <a class="custom-text-black text-decoration-none custom-fs-10" href="#">TRACK ORDER</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-md navbar-light custom-bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html">
+                    <img class="logo" src="./images/logo.JPG" alt="logo image" />
+                </a>
+                <form class="d-flex w-100 position-relative">
+                    <input class="form-control me-2 rounded-pill px-4 py-3" type="search"
+                        placeholder="Search entire store here..." aria-label="Search">
+                    <button
+                        class="btn btn-outline-success rounded-circle position-absolute custom-bg-primary search-icon"
+                        type="submit">
+                        <svg width="12" height="12" viewBox="0 0 416 416" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M173.09 16C142.021 16 111.649 25.2132 85.8155 42.4744C59.9822 59.7357 39.8476 84.2698 27.9578 112.974C16.0681 141.679 12.9572 173.264 19.0185 203.737C25.0799 234.209 40.0412 262.2 62.0107 284.169C83.9801 306.139 111.971 321.1 142.443 327.162C172.916 333.223 204.501 330.112 233.206 318.222C261.91 306.332 286.444 286.198 303.706 260.365C320.967 234.531 330.18 204.159 330.18 173.09C330.177 131.428 313.626 91.473 284.167 62.0135C254.707 32.554 214.752 16.0027 173.09 16V16Z"
+                                stroke="black" stroke-width="45" stroke-miterlimit="10" />
+                            <path d="M290.29 290.29L400 400" stroke="black" stroke-width="32" stroke-miterlimit="10"
+                                stroke-linecap="round" />
+                        </svg>
+
+                    </button>
+                </form>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-lg-center">
+                    <li class="nav-item my-2">
+                        <div class="dropdown">
+                            <button
+                                class="btn btn-sm rounded-pill custom-bg-primary dropdown-toggle d-flex align-items-center"
+                                type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                <svg class="me-2" width="16" height="16" viewBox="0 0 417 417" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M210.919 0.0193271C93.9393 -1.56067 -1.56067 93.9393 0.0193271 210.919C1.57933 323.109 92.9293 414.459 205.119 416.019C322.119 417.619 417.599 322.119 415.999 205.139C414.459 92.9293 323.109 1.57933 210.919 0.0193271ZM337.339 327.269C336.941 327.7 336.453 328.038 335.909 328.259C335.366 328.48 334.78 328.579 334.194 328.548C333.608 328.518 333.036 328.359 332.519 328.082C332.001 327.806 331.551 327.419 331.199 326.949C322.255 315.247 311.301 305.228 298.849 297.359C273.389 281.019 241.129 272.019 208.019 272.019C174.909 272.019 142.649 281.019 117.189 297.359C104.738 305.224 93.7843 315.24 84.8393 326.939C84.4879 327.409 84.0374 327.796 83.5199 328.072C83.0023 328.349 82.4302 328.508 81.8443 328.538C81.2584 328.569 80.6729 328.47 80.1294 328.249C79.5859 328.028 79.0977 327.69 78.6993 327.259C49.3561 295.583 32.7343 254.192 32.0193 211.019C30.3893 113.709 110.239 32.2593 207.589 32.0193C304.939 31.7793 384.019 110.829 384.019 208.019C384.053 252.233 367.38 294.828 337.339 327.269V327.269Z"
+                                        fill="black" />
+                                    <path
+                                        d="M208.02 96.0195C188.3 96.0195 170.47 103.41 157.8 116.84C145.13 130.27 138.8 148.84 140.23 168.77C143.13 208.02 173.54 240.02 208.02 240.02C242.5 240.02 272.85 208.02 275.81 168.78C277.29 149.04 271.01 130.64 258.13 116.96C245.41 103.46 227.61 96.0195 208.02 96.0195Z"
+                                        fill="black" />
+                                </svg>
+                                <span>Login</span>
+                            </button>
+                            <ul class="dropdown-menu p-2 px-3" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item btn btn-sm w-100 custom-bg-secondary custom-text-white text-center px-5"
+                                        href="#">Sign In</a></li>
+                                <p class="custom-fs-10 custom-text-black m-0 text-center my-2">New Customer ?</p>
+                                <li><a class="dropdown-item btn btn-sm w-100 custom-bg-primary custom-text-white text-center px-5"
+                                        href="#">Start Here</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item my-2">
+                        <div class="dropdown">
+                            <button
+                                class="btn btn-sm rounded-pill dropdown-toggle d-flex align-items-center position-relative"
+                                type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                <svg class="me-2" width="16" height="16" viewBox="0 0 436 384" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M144 384C161.673 384 176 369.673 176 352C176 334.327 161.673 320 144 320C126.327 320 112 334.327 112 352C112 369.673 126.327 384 144 384Z"
+                                        fill="black" />
+                                    <path
+                                        d="M368 384C385.673 384 400 369.673 400 352C400 334.327 385.673 320 368 320C350.327 320 336 334.327 336 352C336 369.673 350.327 384 368 384Z"
+                                        fill="black" />
+                                    <path
+                                        d="M135.78 240H397.12L435.52 48H101.89L93.42 0H0V32H66.58L114.58 304H400V272H141.42L135.78 240Z"
+                                        fill="black" />
+                                </svg>
+                                <span
+                                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                    9
+                                    <span class="visually-hidden">unread messages</span>
+                                </span>
+                                <span>My Cart</span>
+                            </button>
+                            <div class="dropdown-menu me-5 position-absolute left-12"
+                                aria-labelledby="dropdownMenuButton1">
+                                <div class="container custom-w-300">
+                                    <p class="text-overflow">
+                                        You have no item in your shopping cart.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <nav class="navbar navbar-expand-md navbar-dark custom-bg-primary p-0">
+            <div class="d-flex justify-content-between flex-row flex-lg-row w-100 overflow-x-auto">
+                <div class="nav-item dropdown position-static">
+                    <a class="nav-link dropdown-toggle custom-text-white custom-fs-10 py-3" href="#"
+                        data-bs-toggle="dropdown">KIDSWARE</a>
+                    <div class="dropdown-menu start-0">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-12 col-sm-4 col-md-3 py-4">
+                                    <h5 class="custom-fs-15 custom-fw-600">CLOTHING</h5>
+                                    <div class="list-group">
+                                        <a class="list-group-item" href="#">Accomodations</a>
+                                        <a class="list-group-item" href="#">Terms & Conditions</a>
+                                        <a class="list-group-item" href="#">Privacy</a>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-4 col-md-3 py-4">
+                                    <h5 class="custom-fs-15 custom-fw-600">FOOTSWARE</h5>
+                                    <div class="card">
+                                        <img src="https://via.placeholder.com/320x180" class="img-fluid" alt="image">
+                                        <div class="card-body">
+                                            <p class="card-text">Some quick example text to build on the card
+                                                title and make up the bulk of the card's content.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-4 col-md-3 py-4">
+                                    <h5 class="custom-fs-15 custom-fw-600">GROOMING</h5>
+                                    <p>Lorem ipsum dolo sit achmet muhamed borlan de irtka.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav-item dropdown position-static">
+                    <a class="nav-link dropdown-toggle custom-text-white custom-fs-10 py-3" href="#"
+                        data-bs-toggle="dropdown">WOMEN FASHION</a>
+                    <div class="dropdown-menu start-0">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-12 col-sm-4 col-md-3 py-4">
+                                    <h5 class="custom-fs-15 custom-fw-600">CLOTHING</h5>
+                                    <div class="list-group">
+                                        <a class="list-group-item" href="#">Accomodations</a>
+                                        <a class="list-group-item" href="#">Terms & Conditions</a>
+                                        <a class="list-group-item" href="#">Privacy</a>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-4 col-md-3 py-4">
+                                    <h5 class="custom-fs-15 custom-fw-600">FOOTSWARE</h5>
+                                    <div class="card">
+                                        <img src="https://via.placeholder.com/320x180" class="img-fluid" alt="image">
+                                        <div class="card-body">
+                                            <p class="card-text">Some quick example text to build on the card
+                                                title and make up the bulk of the card's content.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-4 col-md-3 py-4">
+                                    <h5 class="custom-fs-15 custom-fw-600">GROOMING</h5>
+                                    <p>Lorem ipsum dolo sit achmet muhamed borlan de irtka.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav-item dropdown position-static">
+                    <a class="nav-link dropdown-toggle custom-text-white custom-fs-10 py-3" href="#"
+                        data-bs-toggle="dropdown">MEN'S FASHION</a>
+                    <div class="dropdown-menu start-0">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-12 col-sm-4 col-md-3 py-4">
+                                    <h5 class="custom-fs-15 custom-fw-600">CLOTHING</h5>
+                                    <div class="list-group">
+                                        <a class="list-group-item" href="#">Accomodations</a>
+                                        <a class="list-group-item" href="#">Terms & Conditions</a>
+                                        <a class="list-group-item" href="#">Privacy</a>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-4 col-md-3 py-4">
+                                    <h5 class="custom-fs-15 custom-fw-600">FOOTSWARE</h5>
+                                    <div class="card">
+                                        <img src="https://via.placeholder.com/320x180" class="img-fluid" alt="image">
+                                        <div class="card-body">
+                                            <p class="card-text">Some quick example text to build on the card
+                                                title and make up the bulk of the card's content.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-4 col-md-3 py-4">
+                                    <h5 class="custom-fs-15 custom-fw-600">GROOMING</h5>
+                                    <p>Lorem ipsum dolo sit achmet muhamed borlan de irtka.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav-item dropdown position-static">
+                    <a class="nav-link dropdown-toggle custom-text-white custom-fs-10 py-3" href="#"
+                        data-bs-toggle="dropdown">LIFESTYLE</a>
+                    <div class="dropdown-menu start-0">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-12 col-sm-4 col-md-3 py-4">
+                                    <h5 class="custom-fs-15 custom-fw-600">CLOTHING</h5>
+                                    <div class="list-group">
+                                        <a class="list-group-item" href="#">Accomodations</a>
+                                        <a class="list-group-item" href="#">Terms & Conditions</a>
+                                        <a class="list-group-item" href="#">Privacy</a>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-4 col-md-3 py-4">
+                                    <h5 class="custom-fs-15 custom-fw-600">FOOTSWARE</h5>
+                                    <div class="card">
+                                        <img src="https://via.placeholder.com/320x180" class="img-fluid" alt="image">
+                                        <div class="card-body">
+                                            <p class="card-text">Some quick example text to build on the card
+                                                title and make up the bulk of the card's content.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-4 col-md-3 py-4">
+                                    <h5 class="custom-fs-15 custom-fw-600">GROOMING</h5>
+                                    <p>Lorem ipsum dolo sit achmet muhamed borlan de irtka.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav-item dropdown position-static">
+                    <a class="nav-link dropdown-toggle custom-text-white custom-fs-10 py-3" href="#"
+                        data-bs-toggle="dropdown">DAILY NEEDS</a>
+                    <div class="dropdown-menu start-0">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-12 col-sm-4 col-md-3 py-4">
+                                    <h5 class="custom-fs-15 custom-fw-600">CLOTHING</h5>
+                                    <div class="list-group">
+                                        <a class="list-group-item" href="#">Accomodations</a>
+                                        <a class="list-group-item" href="#">Terms & Conditions</a>
+                                        <a class="list-group-item" href="#">Privacy</a>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-4 col-md-3 py-4">
+                                    <h5 class="custom-fs-15 custom-fw-600">FOOTSWARE</h5>
+                                    <div class="card">
+                                        <img src="https://via.placeholder.com/320x180" class="img-fluid" alt="image">
+                                        <div class="card-body">
+                                            <p class="card-text">Some quick example text to build on the card
+                                                title and make up the bulk of the card's content.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-4 col-md-3 py-4">
+                                    <h5 class="custom-fs-15 custom-fw-600">GROOMING</h5>
+                                    <p>Lorem ipsum dolo sit achmet muhamed borlan de irtka.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav-item dropdown position-static">
+                    <a class="nav-link dropdown-toggle custom-text-white custom-fs-10 py-3" href="#"
+                        data-bs-toggle="dropdown">SPORTS WARE</a>
+                    <div class="dropdown-menu start-0">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-12 col-sm-4 col-md-3 py-4">
+                                    <h5 class="custom-fs-15 custom-fw-600">CLOTHING</h5>
+                                    <div class="list-group">
+                                        <a class="list-group-item" href="#">Accomodations</a>
+                                        <a class="list-group-item" href="#">Terms & Conditions</a>
+                                        <a class="list-group-item" href="#">Privacy</a>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-4 col-md-3 py-4">
+                                    <h5 class="custom-fs-15 custom-fw-600">FOOTSWARE</h5>
+                                    <div class="card">
+                                        <img src="https://via.placeholder.com/320x180" class="img-fluid" alt="image">
+                                        <div class="card-body">
+                                            <p class="card-text">Some quick example text to build on the card
+                                                title and make up the bulk of the card's content.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-4 col-md-3 py-4">
+                                    <h5 class="custom-fs-15 custom-fw-600">GROOMING</h5>
+                                    <p>Lorem ipsum dolo sit achmet muhamed borlan de irtka.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav-item dropdown position-static">
+                    <a class="nav-link dropdown-toggle custom-text-white custom-fs-10 py-3" href="#"
+                        data-bs-toggle="dropdown">ELECTRONICS & APPLIANCES</a>
+                    <div class="dropdown-menu start-0">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-12 col-sm-4 col-md-3 py-4">
+                                    <h5 class="custom-fs-15 custom-fw-600">CLOTHING</h5>
+                                    <div class="list-group">
+                                        <a class="list-group-item" href="#">Accomodations</a>
+                                        <a class="list-group-item" href="#">Terms & Conditions</a>
+                                        <a class="list-group-item" href="#">Privacy</a>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-4 col-md-3 py-4">
+                                    <h5 class="custom-fs-15 custom-fw-600">FOOTSWARE</h5>
+                                    <div class="card">
+                                        <img src="https://via.placeholder.com/320x180" class="img-fluid" alt="image">
+                                        <div class="card-body">
+                                            <p class="card-text">Some quick example text to build on the card
+                                                title and make up the bulk of the card's content.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-4 col-md-3 py-4">
+                                    <h5 class="custom-fs-15 custom-fw-600">GROOMING</h5>
+                                    <p>Lorem ipsum dolo sit achmet muhamed borlan de irtka.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    <!-- ? MOBILE NAVBAR -->
+    <section class="d-block d-md-none">
+        <div class="border border-1 py-2">
+            <div class="container-fluid">
+                <div class="d-flex align-items-center justify-content-between">
+                    <a class="custom-text-black text-decoration-none custom-fs-10" href="#">SELL ON
+                        BARATODEAL</a>
+                    <span class="mx-2">|</span>
+                    <a class="custom-text-black text-decoration-none custom-fs-10" href="#">HELP CENTER</a>
+                    <span class="mx-2">|</span>
+                    <a class="custom-text-black text-decoration-none custom-fs-10" href="#">TRACK ORDER</a>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-sm navbar-light custom-bg-light">
+            <div class="container-fluid">
+                <div>
+                    <button class="btn border border-1 custom-bc-black" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                        <svg width="16" height="16" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 12H16V10H0V12ZM0 7H16V5H0V7ZM0 0V2H16V0H0Z" fill="black" />
+                        </svg>
+                    </button>
+                    <a class="navbar-brand" href="./index.html">
+                        <img class="logo-sm" src="./images/logo.JPG" alt="logo image" />
+                    </a>
+                </div>
+                <ul class="navbar-nav ml-auto mb-2 mb-lg-0 flex-row">
+                    <li class="nav-item my-2">
+                        <div class="dropdown">
+                            <button
+                                class="btn btn-sm rounded-pill custom-bg-primary dropdown-toggle d-flex align-items-center"
+                                type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                <svg class="me-2" width="16" height="16" viewBox="0 0 417 417" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M210.919 0.0193271C93.9393 -1.56067 -1.56067 93.9393 0.0193271 210.919C1.57933 323.109 92.9293 414.459 205.119 416.019C322.119 417.619 417.599 322.119 415.999 205.139C414.459 92.9293 323.109 1.57933 210.919 0.0193271ZM337.339 327.269C336.941 327.7 336.453 328.038 335.909 328.259C335.366 328.48 334.78 328.579 334.194 328.548C333.608 328.518 333.036 328.359 332.519 328.082C332.001 327.806 331.551 327.419 331.199 326.949C322.255 315.247 311.301 305.228 298.849 297.359C273.389 281.019 241.129 272.019 208.019 272.019C174.909 272.019 142.649 281.019 117.189 297.359C104.738 305.224 93.7843 315.24 84.8393 326.939C84.4879 327.409 84.0374 327.796 83.5199 328.072C83.0023 328.349 82.4302 328.508 81.8443 328.538C81.2584 328.569 80.6729 328.47 80.1294 328.249C79.5859 328.028 79.0977 327.69 78.6993 327.259C49.3561 295.583 32.7343 254.192 32.0193 211.019C30.3893 113.709 110.239 32.2593 207.589 32.0193C304.939 31.7793 384.019 110.829 384.019 208.019C384.053 252.233 367.38 294.828 337.339 327.269V327.269Z"
+                                        fill="black" />
+                                    <path
+                                        d="M208.02 96.0195C188.3 96.0195 170.47 103.41 157.8 116.84C145.13 130.27 138.8 148.84 140.23 168.77C143.13 208.02 173.54 240.02 208.02 240.02C242.5 240.02 272.85 208.02 275.81 168.78C277.29 149.04 271.01 130.64 258.13 116.96C245.41 103.46 227.61 96.0195 208.02 96.0195Z"
+                                        fill="black" />
+                                </svg>
+                                <span>Login</span>
+                            </button>
+                            <ul class="dropdown-menu p-2 px-3" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item btn btn-sm w-100 custom-bg-secondary custom-text-white text-center px-5"
+                                        href="#">Sign In</a></li>
+                                <p class="custom-fs-10 custom-text-black m-0 text-center my-2">New Customer ?</p>
+                                <li><a class="dropdown-item btn btn-sm w-100 custom-bg-primary custom-text-white text-center px-5"
+                                        href="#">Start Here</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item my-2">
+                        <div class="dropdown dropstart">
+                            <button
+                                class="btn btn-sm rounded-pill dropdown-toggle d-flex align-items-center position-relative"
+                                type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                <svg class="me-2" width="16" height="16" viewBox="0 0 436 384" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M144 384C161.673 384 176 369.673 176 352C176 334.327 161.673 320 144 320C126.327 320 112 334.327 112 352C112 369.673 126.327 384 144 384Z"
+                                        fill="black" />
+                                    <path
+                                        d="M368 384C385.673 384 400 369.673 400 352C400 334.327 385.673 320 368 320C350.327 320 336 334.327 336 352C336 369.673 350.327 384 368 384Z"
+                                        fill="black" />
+                                    <path
+                                        d="M135.78 240H397.12L435.52 48H101.89L93.42 0H0V32H66.58L114.58 304H400V272H141.42L135.78 240Z"
+                                        fill="black" />
+                                </svg>
+                                <span
+                                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                    9
+                                    <span class="visually-hidden">unread messages</span>
+                                </span>
+                                <span>My Cart</span>
+                            </button>
+                            <div class="dropdown-menu me-5 position-absolute" aria-labelledby="dropdownMenuButton1">
+                                <div class="container custom-w-300">
+                                    <p class="text-overflow">
+                                        You have no item in your shopping cart.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="custom-bg-light pb-3">
+            <form class="d-flex w-100 position-relative">
+                <input class="form-control mx-2 rounded-pill p-3" type="search"
+                    placeholder="Search entire store here..." aria-label="Search">
+                <button class="btn btn-outline-success rounded-circle position-absolute custom-bg-primary search-icon"
+                    type="submit">
+                    <svg width="12" height="12" viewBox="0 0 416 416" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M173.09 16C142.021 16 111.649 25.2132 85.8155 42.4744C59.9822 59.7357 39.8476 84.2698 27.9578 112.974C16.0681 141.679 12.9572 173.264 19.0185 203.737C25.0799 234.209 40.0412 262.2 62.0107 284.169C83.9801 306.139 111.971 321.1 142.443 327.162C172.916 333.223 204.501 330.112 233.206 318.222C261.91 306.332 286.444 286.198 303.706 260.365C320.967 234.531 330.18 204.159 330.18 173.09C330.177 131.428 313.626 91.473 284.167 62.0135C254.707 32.554 214.752 16.0027 173.09 16V16Z"
+                            stroke="black" stroke-width="45" stroke-miterlimit="10" />
+                        <path d="M290.29 290.29L400 400" stroke="black" stroke-width="32" stroke-miterlimit="10"
+                            stroke-linecap="round" />
+                    </svg>
+
+                </button>
+            </form>
+        </div>
+
+        <!-- OFFCANVAS CONTENT -->
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+            aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasExampleLabel">Baratodeal.in</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div>
+                    <div class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle custom-text-black custom-fs-10 py-3" href="#"
+                            data-bs-toggle="dropdown">KIDSWARE</a>
+                        <div class="dropdown-menu start-0">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-12 col-sm-4 col-md-3 py-4">
+                                        <h5 class="custom-fs-15 custom-fw-600">CLOTHING</h5>
+                                        <div class="list-group">
+                                            <a class="list-group-item" href="#">Accomodations</a>
+                                            <a class="list-group-item" href="#">Terms & Conditions</a>
+                                            <a class="list-group-item" href="#">Privacy</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-4 col-md-3 py-4">
+                                        <h5 class="custom-fs-15 custom-fw-600">FOOTSWARE</h5>
+                                        <div class="card">
+                                            <img src="https://via.placeholder.com/320x180" class="img-fluid"
+                                                alt="image">
+                                            <div class="card-body">
+                                                <p class="card-text">Some quick example text to build on the card
+                                                    title and make up the bulk of the card's content.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-4 col-md-3 py-4">
+                                        <h5 class="custom-fs-15 custom-fw-600">GROOMING</h5>
+                                        <p>Lorem ipsum dolo sit achmet muhamed borlan de irtka.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle custom-text-black custom-fs-10 py-3" href="#"
+                            data-bs-toggle="dropdown">WOMEN FASHION</a>
+                        <div class="dropdown-menu start-0">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-12 col-sm-4 col-md-3 py-4">
+                                        <h5 class="custom-fs-15 custom-fw-600">CLOTHING</h5>
+                                        <div class="list-group">
+                                            <a class="list-group-item" href="#">Accomodations</a>
+                                            <a class="list-group-item" href="#">Terms & Conditions</a>
+                                            <a class="list-group-item" href="#">Privacy</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-4 col-md-3 py-4">
+                                        <h5 class="custom-fs-15 custom-fw-600">FOOTSWARE</h5>
+                                        <div class="card">
+                                            <img src="https://via.placeholder.com/320x180" class="img-fluid"
+                                                alt="image">
+                                            <div class="card-body">
+                                                <p class="card-text">Some quick example text to build on the card
+                                                    title and make up the bulk of the card's content.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-4 col-md-3 py-4">
+                                        <h5 class="custom-fs-15 custom-fw-600">GROOMING</h5>
+                                        <p>Lorem ipsum dolo sit achmet muhamed borlan de irtka.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle custom-text-black custom-fs-10 py-3" href="#"
+                            data-bs-toggle="dropdown">MEN'S FASHION</a>
+                        <div class="dropdown-menu start-0">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-12 col-sm-4 col-md-3 py-4">
+                                        <h5 class="custom-fs-15 custom-fw-600">CLOTHING</h5>
+                                        <div class="list-group">
+                                            <a class="list-group-item" href="#">Accomodations</a>
+                                            <a class="list-group-item" href="#">Terms & Conditions</a>
+                                            <a class="list-group-item" href="#">Privacy</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-4 col-md-3 py-4">
+                                        <h5 class="custom-fs-15 custom-fw-600">FOOTSWARE</h5>
+                                        <div class="card">
+                                            <img src="https://via.placeholder.com/320x180" class="img-fluid"
+                                                alt="image">
+                                            <div class="card-body">
+                                                <p class="card-text">Some quick example text to build on the card
+                                                    title and make up the bulk of the card's content.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-4 col-md-3 py-4">
+                                        <h5 class="custom-fs-15 custom-fw-600">GROOMING</h5>
+                                        <p>Lorem ipsum dolo sit achmet muhamed borlan de irtka.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle custom-text-black custom-fs-10 py-3" href="#"
+                            data-bs-toggle="dropdown">LIFESTYLE</a>
+                        <div class="dropdown-menu start-0">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-12 col-sm-4 col-md-3 py-4">
+                                        <h5 class="custom-fs-15 custom-fw-600">CLOTHING</h5>
+                                        <div class="list-group">
+                                            <a class="list-group-item" href="#">Accomodations</a>
+                                            <a class="list-group-item" href="#">Terms & Conditions</a>
+                                            <a class="list-group-item" href="#">Privacy</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-4 col-md-3 py-4">
+                                        <h5 class="custom-fs-15 custom-fw-600">FOOTSWARE</h5>
+                                        <div class="card">
+                                            <img src="https://via.placeholder.com/320x180" class="img-fluid"
+                                                alt="image">
+                                            <div class="card-body">
+                                                <p class="card-text">Some quick example text to build on the card
+                                                    title and make up the bulk of the card's content.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-4 col-md-3 py-4">
+                                        <h5 class="custom-fs-15 custom-fw-600">GROOMING</h5>
+                                        <p>Lorem ipsum dolo sit achmet muhamed borlan de irtka.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle custom-text-black custom-fs-10 py-3" href="#"
+                            data-bs-toggle="dropdown">DAILY NEEDS</a>
+                        <div class="dropdown-menu start-0">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-12 col-sm-4 col-md-3 py-4">
+                                        <h5 class="custom-fs-15 custom-fw-600">CLOTHING</h5>
+                                        <div class="list-group">
+                                            <a class="list-group-item" href="#">Accomodations</a>
+                                            <a class="list-group-item" href="#">Terms & Conditions</a>
+                                            <a class="list-group-item" href="#">Privacy</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-4 col-md-3 py-4">
+                                        <h5 class="custom-fs-15 custom-fw-600">FOOTSWARE</h5>
+                                        <div class="card">
+                                            <img src="https://via.placeholder.com/320x180" class="img-fluid"
+                                                alt="image">
+                                            <div class="card-body">
+                                                <p class="card-text">Some quick example text to build on the card
+                                                    title and make up the bulk of the card's content.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-4 col-md-3 py-4">
+                                        <h5 class="custom-fs-15 custom-fw-600">GROOMING</h5>
+                                        <p>Lorem ipsum dolo sit achmet muhamed borlan de irtka.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle custom-text-black custom-fs-10 py-3" href="#"
+                            data-bs-toggle="dropdown">SPORTS WARE</a>
+                        <div class="dropdown-menu start-0">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-12 col-sm-4 col-md-3 py-4">
+                                        <h5 class="custom-fs-15 custom-fw-600">CLOTHING</h5>
+                                        <div class="list-group">
+                                            <a class="list-group-item" href="#">Accomodations</a>
+                                            <a class="list-group-item" href="#">Terms & Conditions</a>
+                                            <a class="list-group-item" href="#">Privacy</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-4 col-md-3 py-4">
+                                        <h5 class="custom-fs-15 custom-fw-600">FOOTSWARE</h5>
+                                        <div class="card">
+                                            <img src="https://via.placeholder.com/320x180" class="img-fluid"
+                                                alt="image">
+                                            <div class="card-body">
+                                                <p class="card-text">Some quick example text to build on the card
+                                                    title and make up the bulk of the card's content.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-4 col-md-3 py-4">
+                                        <h5 class="custom-fs-15 custom-fw-600">GROOMING</h5>
+                                        <p>Lorem ipsum dolo sit achmet muhamed borlan de irtka.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle custom-text-black custom-fs-10 py-3" href="#"
+                            data-bs-toggle="dropdown">ELECTRONICS & APPLIANCES</a>
+                        <div class="dropdown-menu start-0">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-12 col-sm-4 col-md-3 py-4">
+                                        <h5 class="custom-fs-15 custom-fw-600">CLOTHING</h5>
+                                        <div class="list-group">
+                                            <a class="list-group-item" href="#">Accomodations</a>
+                                            <a class="list-group-item" href="#">Terms & Conditions</a>
+                                            <a class="list-group-item" href="#">Privacy</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-4 col-md-3 py-4">
+                                        <h5 class="custom-fs-15 custom-fw-600">FOOTSWARE</h5>
+                                        <div class="card">
+                                            <img src="https://via.placeholder.com/320x180" class="img-fluid"
+                                                alt="image">
+                                            <div class="card-body">
+                                                <p class="card-text">Some quick example text to build on the card
+                                                    title and make up the bulk of the card's content.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-4 col-md-3 py-4">
+                                        <h5 class="custom-fs-15 custom-fw-600">GROOMING</h5>
+                                        <p>Lorem ipsum dolo sit achmet muhamed borlan de irtka.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ? BREADCRUMB -->
+    <section class="container-fluid mt-4">
+        <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);"
+            aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="./index.html"
+                        class="text-decoration-none custom-fw-500 custom-text-black">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="faq page">FAQ</li>
+            </ol>
+        </nav>
+    </section>
+
+    <!-- ? Page section  -->
+    <section class="container-fluid pb-5">
+        <div>
+            <div class="accordion mt-5">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button
+                            class="accordion-button custom-fs-25 bg-white text-dark border border-dark collapsed border-1"
+                            type="button" data-bs-toggle="collapse" data-bs-target="#question-1" aria-expanded="true"
+                            aria-controls="collapseOne">
+                            Where is falcon tech ?
+                        </button>
+                    </h2>
+                    <div id="question-1" class="accordion-collapse collapse bg-light" aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body custom-subtitle-2">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Condimentum dignissim elementum ut
+                            blandit sollicitudin. Adipiscing semper velit id ut quam nunc ipsum. Et tortor mi
+                            consectetur lorem arcu posuere. Velit, at dolor risus sed tempus nulla. Fringilla ornare sit
+                            dolor diam. Orci commodo pellentesque donec donec turpis sed vitae, sed.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion mt-4">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button
+                            class="accordion-button custom-fs-25 bg-white text-dark border border-dark border-1 collapsed"
+                            type="button" data-bs-toggle="collapse" data-bs-target="#question-2" aria-expanded="true"
+                            aria-controls="collapseOne">
+                            Where is falcon tech ?
+                        </button>
+                    </h2>
+                    <div id="question-2" class="accordion-collapse collapse bg-light" aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body custom-subtitle-2">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Condimentum dignissim elementum ut
+                            blandit sollicitudin. Adipiscing semper velit id ut quam nunc ipsum. Et tortor mi
+                            consectetur lorem arcu posuere. Velit, at dolor risus sed tempus nulla. Fringilla ornare sit
+                            dolor diam. Orci commodo pellentesque donec donec turpis sed vitae, sed.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion mt-4">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button custom-fs-25 bg-white text-dark border border-dark border-1"
+                            type="button" data-bs-toggle="collapse" data-bs-target="#question-3" aria-expanded="true"
+                            aria-controls="collapseOne">
+                            Where is falcon tech ?
+                        </button>
+                    </h2>
+                    <div id="question-3" class="accordion-collapse collapse show bg-light" aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body custom-subtitle-2">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Condimentum dignissim elementum ut
+                            blandit sollicitudin. Adipiscing semper velit id ut quam nunc ipsum. Et tortor mi
+                            consectetur lorem arcu posuere. Velit, at dolor risus sed tempus nulla. Fringilla ornare sit
+                            dolor diam. Orci commodo pellentesque donec donec turpis sed vitae, sed.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ============== -->
+
+    <!-- ? FOOTER -->
+    <footer class="custom-bg-secondary">
+        <div class="container-fluid">
+            <div class="row py-4">
+                <div
+                    class="col-12 col-sm-6 col-md-3 col-lg-2 m-0 p-2 border border-top-0 border-bottom-0 custom-bc-light-secondary border-start-0 my-4">
+                    <div class="d-flex flex-column text-center">
+                        <div class="dropdown">
+                            <button
+                                class="btn custom-fs-15 custom-bg-primary rounded-pill custom-text-white custom-fw-500 dropdown-toggle"
+                                type="button" id="sell-with-us" data-bs-toggle="dropdown" aria-expanded="false">
+                                SELL WITH US
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="sell-with-us">
+                                <li><a class="dropdown-item" href="#">nav item 1</a></li>
+                                <li><a class="dropdown-item" href="#">nav item 2</a></li>
+                                <li><a class="dropdown-item" href="#">nav item 3</a></li>
+                                <li><a class="dropdown-item" href="#">nav item 4</a></li>
+                            </ul>
+                        </div>
+                        <div class="my-3">
+                            <a href=""
+                                class="custom-fs-15 btn custom-bg-primary rounded-pill custom-text-white custom-fw-500 pe-5">ADVERTISE</a>
+                        </div>
+                        <div class="dropdown">
+                            <button
+                                class="custom-fs-15 btn custom-bg-primary rounded-pill custom-text-white custom-fw-500 dropdown-toggle"
+                                type="button" id="sell-with-us" data-bs-toggle="dropdown" aria-expanded="false">
+                                HELP CENTER
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="sell-with-us">
+                                <li><a class="dropdown-item" href="tel:1344523">Contact Number</a></li>
+                                <li><a class="dropdown-item" href="tel:1344523">Contact Number</a></li>
+                                <li><a class="dropdown-item" href="tel:1344523">Contact Number</a></li>
+                                <li><a class="dropdown-item" href="tel:1344523">Contact Number</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="col-12 col-sm-6 col-md-3 col-lg-2 m-0 p-2 border border-top-0 border-bottom-0 custom-bc-light-secondary my-4 text-center">
+                    <div class="d-inline-flex flex-column">
+                        <h3 class="custom-fs-20 custom-fw-700 custom-text-white text-start">About Us</h3>
+                        <div class="mt-3">
+                            <a class="custom-fs-15 text-decoration-none custom-text-white d-block text-start" href="#">About
+                                Baratodeal.in</a>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="col-12 col-sm-6 col-md-3 col-lg-2 m-0 p-2 border border-top-0 border-bottom-0 custom-bc-light-secondary my-4 text-center">
+                    <div class="d-inline-flex flex-column">
+                        <h3 class="custom-fs-20 custom-fw-700 custom-text-white text-start">Information</h3>
+                        <div class="mt-3">
+                            <a class="custom-fs-15 text-decoration-none custom-text-white d-block text-start"
+                                href="./faq.html">FAQs</a>
+                        </div>
+                        <div class="mt-3">
+                            <a class="custom-fs-15 text-decoration-none custom-text-white d-block text-start"
+                                href="#">Return & Refund Policy</a>
+                        </div>
+                        <div class="mt-3">
+                            <a class="custom-fs-15 text-decoration-none custom-text-white d-block text-start"
+                                href="#">Privacy Policy</a>
+                        </div>
+                        <div class="mt-3">
+                            <a class="custom-fs-15 text-decoration-none custom-text-white d-block text-start"
+                                href="#">Terms & Conditions</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="col-12 col-sm-6 col-md-3 col-lg-2 m-0 p-2 border border-top-0 border-bottom-0 custom-bc-light-secondary my-4 text-center">
+                    <div class="d-inline-flex flex-column">
+                        <h3 class="custom-fs-20 custom-fw-700 custom-text-white m-0 mb-4 text-start">Life with us</h3>
+                        <a class="custom-fs-15 text-decoration-none custom-text-white d-block text-start" href="#">Feature your
+                            Business</a>
+                    </div>
+                </div>
+                <div
+                    class="col-12 col-sm-6 col-md-3 col-lg-2 m-0 p-2 border border-top-0 border-bottom-0 custom-bc-light-secondary my-4 text-center">
+                    <div class="d-inline-flex flex-column">
+                    <h3 class="custom-fs-20 custom-fw-700 custom-text-white mb-3">Follow with us</h3>
+                    <div class="mt-2">
+                        <a class="custom-fs-15 text-decoration-none custom-text-white d-flex align-items-center custom-text-white"
+                            href="#">
+                            <svg class="me-1" width="15" height="15" viewBox="0 0 448 446" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M448 224C448 100.3 347.7 0 224 0C100.3 0 0 100.3 0 224C0 335.8 81.9 428.47 189 445.29V288.77H132.11V224H189V174.65C189 118.52 222.45 87.49 273.61 87.49C298.12 87.49 323.76 91.87 323.76 91.87V147H295.5C267.69 147 258.99 164.26 258.99 182V224H321.11L311.19 288.77H259V445.31C366.1 428.5 448 335.83 448 224V224Z"
+                                    fill="#35AFD6" />
+                            </svg>
+                            <span>Facebook</span>
+                        </a>
+                    </div>
+                    <div class="mt-2">
+                        <a class="custom-fs-15 text-decoration-none custom-text-white d-flex align-items-center custom-text-white"
+                            href="#">
+                            <svg class="me-1" width="15" height="15" viewBox="0 0 448 448" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M317.33 37.33C342.063 37.4039 365.761 47.2616 383.25 64.7502C400.738 82.2389 410.596 105.937 410.67 130.67V317.33C410.596 342.063 400.738 365.761 383.25 383.25C365.761 400.738 342.063 410.596 317.33 410.67H130.67C105.937 410.596 82.2389 400.738 64.7502 383.25C47.2616 365.761 37.4039 342.063 37.33 317.33V130.67C37.4039 105.937 47.2616 82.2389 64.7502 64.7502C82.2389 47.2616 105.937 37.4039 130.67 37.33H317.33V37.33ZM317.33 0H130.67C58.8 0 0 58.8 0 130.67V317.33C0 389.2 58.8 448 130.67 448H317.33C389.2 448 448 389.2 448 317.33V130.67C448 58.8 389.2 0 317.33 0V0Z"
+                                    fill="#FF00F7" />
+                                <path
+                                    d="M345.33 130.67C339.792 130.67 334.379 129.028 329.774 125.951C325.17 122.874 321.581 118.501 319.461 113.385C317.342 108.269 316.788 102.639 317.868 97.2074C318.948 91.7759 321.615 86.7868 325.531 82.8709C329.447 78.9551 334.436 76.2883 339.868 75.2079C345.299 74.1276 350.929 74.6821 356.045 76.8013C361.162 78.9206 365.534 82.5094 368.611 87.114C371.688 91.7185 373.33 97.1321 373.33 102.67C373.338 106.349 372.619 109.994 371.215 113.394C369.81 116.795 367.748 119.885 365.147 122.487C362.545 125.088 359.455 127.15 356.055 128.555C352.654 129.959 349.009 130.678 345.33 130.67V130.67ZM224 149.33C238.768 149.33 253.205 153.709 265.484 161.914C277.764 170.119 287.335 181.781 292.986 195.425C298.638 209.069 300.116 224.083 297.235 238.567C294.354 253.052 287.242 266.357 276.8 276.8C266.357 287.242 253.052 294.354 238.567 297.235C224.083 300.116 209.069 298.638 195.425 292.986C181.781 287.334 170.119 277.764 161.914 265.484C153.709 253.205 149.33 238.768 149.33 224C149.351 204.203 157.225 185.222 171.224 171.224C185.223 157.225 204.203 149.351 224 149.33V149.33ZM224 112C201.849 112 180.194 118.569 161.776 130.875C143.358 143.182 129.003 160.674 120.526 181.139C112.049 201.605 109.831 224.124 114.152 245.85C118.474 267.576 129.141 287.532 144.804 303.196C160.468 318.859 180.424 329.526 202.15 333.848C223.876 338.169 246.395 335.951 266.861 327.474C287.326 318.997 304.818 304.642 317.125 286.224C329.431 267.805 336 246.151 336 224C336 194.296 324.2 165.808 303.196 144.804C282.192 123.8 253.704 112 224 112V112Z"
+                                    fill="#FF00F7" />
+                            </svg>
+                            <span>Instagram</span>
+                        </a>
+                    </div>
+                    <div class="mt-2">
+                        <a class="custom-fs-15 text-decoration-none custom-text-white d-flex align-items-center custom-text-white"
+                            href="#">
+                            <svg class="me-1" width="15" height="15" viewBox="0 0 512 385" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M508.646 84.79C508.646 39.79 475.546 3.59 434.646 3.59C379.246 0.999996 322.746 0 265.006 0H247.006C189.406 0 132.806 0.999999 77.4061 3.6C36.6061 3.6 3.50608 40 3.50608 85C1.00608 120.59 -0.0539189 156.19 0.00608108 191.79C-0.0939189 227.39 1.03941 263.023 3.40608 298.69C3.40608 343.69 36.5061 380.19 77.3061 380.19C135.506 382.89 195.206 384.09 255.906 383.99C316.706 384.19 376.239 382.923 434.506 380.19C475.406 380.19 508.506 343.69 508.506 298.69C510.906 262.99 512.006 227.39 511.906 191.69C512.133 156.09 511.046 120.457 508.646 84.79ZM207.006 289.89V93.39L352.006 191.59L207.006 289.89Z"
+                                    fill="#FF0000" />
+                            </svg>
+                            <span>Youtube</span>
+                        </a>
+                    </div>
+                    <div class="mt-2">
+                        <a class="custom-fs-15 text-decoration-none custom-text-white d-flex align-items-center custom-text-white"
+                            href="#">
+                            <svg class="me-1" width="15" height="15" viewBox="0 0 480 385" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M480 45.5002C461.995 53.3237 442.944 58.478 423.45 60.8002C443.937 48.804 459.343 29.7458 466.78 7.20017C447.411 18.5261 426.256 26.4729 404.22 30.7002C394.941 20.9755 383.781 13.2392 371.419 7.96162C359.057 2.68402 345.751 -0.0246733 332.31 0.000169344C277.89 0.000169344 233.85 43.4002 233.85 96.9002C233.811 104.342 234.664 111.761 236.39 119C197.367 117.171 159.155 107.216 124.2 89.7727C89.2444 72.3294 58.3149 47.7818 33.39 17.7002C24.6457 32.4414 20.0213 49.2606 20 66.4002C20 100 37.53 129.7 64 147.1C48.3173 146.728 32.9559 142.577 19.22 135V136.2C19.22 183.2 53.22 222.3 98.22 231.2C89.7578 233.456 81.0377 234.599 72.28 234.6C66.0658 234.611 59.8657 234.008 53.77 232.8C66.28 271.3 102.69 299.3 145.82 300.1C110.774 327.109 67.7462 341.708 23.5 341.6C15.6462 341.589 7.79966 341.121 0 340.2C45.0118 368.942 97.3345 384.146 150.74 384C332.1 384 431.18 236.3 431.18 108.2C431.18 104 431.07 99.8002 430.87 95.7002C450.101 82.0208 466.738 65.0213 480 45.5002V45.5002Z"
+                                    fill="#089ECD" />
+                            </svg>
+
+                            <span>Twitter</span>
+                        </a>
+                    </div>
+                </div>
+                </div>
+                <div
+                    class="col-12 col-sm-6 col-md-3 col-lg-2 m-0 p-2 border border-top-0 border-bottom-0 custom-bc-light-secondary border-end-0 my-4 text-center">
+                    <div class="d-inline-flex flex-column">
+                    <h3 class="custom-fs-20 custom-fw-700 custom-text-white text-start">Customer Support</h3>
+                    <p class="custom-fs-15 custom-text-white m-0 my-2 mt-4 text-start">Contact us</p>
+                    <p class="custom-fs-15 custom-text-white m-0 my-2 text-start">Baratodeal.in Customer Service</p>
+                    <p class="custom-fs-15 custom-text-white m-0 my-2 text-start">Monday-Sunday 9:30 AM to 6:30 PM</p>
+                    <p class="custom-fs-15 custom-text-white m-0 my-2 text-start">You can also mail us at</p>
+                    <p class="custom-fs-15 custom-text-white m-0 my-2 mt-4 text-start">For more information visit</p>
+                    <p class="custom-fs-18 custom-text-white m-0 my-2 text-start">BARATODEAL.IN HELP CENTER</p>
+                </div>
+                </div>
+            </div>
+            <div>
+                <p class="custom-text-white text-center m-0 pb-4">&copy; 2020 DESIGNED BY WEBD INOVATION, PATNA</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/bootstrap.bundle.js"></script>
+    <script src="./js/glide.min.js"></script>
+    <!-- ? CUSTOM SCRIPT -->
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

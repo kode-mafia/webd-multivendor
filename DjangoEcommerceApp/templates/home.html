@@ -1,0 +1,346 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+    <!-- ? CAROUSEL SLIDER -->
+    <section>
+        <div id="hero-slider" class="glide position-relative">
+            <div class="glide__track" data-glide-el="track">
+                <ul class="glide__slides m-0">
+                    <li class="glide__slide">
+                        <img class="w-100 max-h-600 object-fit-cover" src="{% static 'front/images/hero-1.jpg' %}"
+                            alt="hero image thumbnail" />
+                    </li>
+                    <li class="glide__slide">
+                        <img class="w-100 max-h-600 object-fit-cover" src="{% static 'front/images/hero-1.jpg' %}"
+                            alt="hero image thumbnail" />
+                    </li>
+                    <li class="glide__slide">
+                        <img class="w-100 max-h-600 object-fit-cover" src="{% static 'front/images/hero-1.jpg' %}"
+                            alt="hero image thumbnail" />
+                    </li>
+                </ul>
+                <div class="glide__arrows" data-glide-el="controls">
+                    <button class="glide__arrow glide__arrow--left border-0" data-glide-dir="<">
+                        <svg width="30" height="30" viewBox="0 0 192 336" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M168 24L24 168L168 312" class="custom-stroke-black" stroke-width="48"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                    <button class="glide__arrow glide__arrow--right border-0" data-glide-dir=">">
+                        <svg width="30" height="30" viewBox="0 0 192 336" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M24 312L168 168L24 24" class="custom-stroke-black" stroke-width="48"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="glide__bullets" data-glide-el="controls[nav]">
+                    <button class="glide__bullet" data-glide-dir="=0"></button>
+                    <button class="glide__bullet" data-glide-dir="=1"></button>
+                    <button class="glide__bullet" data-glide-dir="=2"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ? COUNT DOWN -->
+    <section class="custom-bg-secondary">
+        <div class="container-fluid">
+            <div class="d-flex flex-column flex-md-row align-items-center justify-content-center py-5">
+                <div>
+                    <h3 class="custom-text-white custom-fs-40 custom-fw-600 me-4">BEST OFFERS</h3>
+                </div>
+                <div>
+                    <div class="d-flex">
+                        <div class="d-flex flex-column align-items-center">
+                            <div
+                                class="size-52 custom-bg-orange d-flex align-items-center justify-content-center custom-fs-20 custom-text-white">
+                                00</div>
+                            <p class="m-0 custom-text-white custom-fs-10 mt-1">Days</p>
+                        </div>
+                        <p class="m-0 custom-text-white custom-fs-20 mt-2 mx-2">:</p>
+                        <div class="d-flex flex-column align-items-center">
+                            <div
+                                class="size-52 custom-bg-orange d-flex align-items-center justify-content-center custom-fs-20 custom-text-white">
+                                00</div>
+                            <p class="m-0 custom-text-white custom-fs-10 mt-1">Hours</p>
+                        </div>
+                        <p class="m-0 custom-text-white custom-fs-20 mt-2 mx-2">:</p>
+                        <div class="d-flex flex-column align-items-center">
+                            <div
+                                class="size-52 custom-bg-orange d-flex align-items-center justify-content-center custom-fs-20 custom-text-white">
+                                00</div>
+                            <p class="m-0 custom-text-white custom-fs-10 mt-1">Minutes</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ? FEATURES PRODUCT -->
+    <section class="custom-bg-white">
+        <div class="container-fluid py-5">
+            <div class="row align-items-center mb-4">
+                <h2 class="col-md-5 col-lg-4 custom-fs-35 custom-fw-600">FEATURE PRODUCT</h2>
+                <div class="col-md-7 col-lg-8">
+                    <div class="w-100 custom-bg-black h-2"></div>
+                    <div class="w-100 custom-bg-black h-2 mt-4"></div>
+                </div>
+            </div>
+            <div>
+                <div id="feature-product-slider" class="glide position-relative">
+                    <div class="glide__track" data-glide-el="track">
+                        <ul class="glide__slides m-0">
+                            <!-- ? FIRST FEATURE PRODUCT SLIDER -->
+                            
+                            <li class="glide__slide">
+                            
+                                <div class="card">
+                                    <img src="{% static 'front/images/hero-1.jpg' %}" class="card-img-top custom-br-0"
+                                        alt="product image" />
+                                    <div class="card-body custom-bg-primary">
+                                        <h3 class="p-0 m-0 custom-fs-15 custom-fw-600 custom-text-white"> sample product</h3>
+                                    </div>
+                                    <div
+                                        class="card-body custom-bg-primary d-flex align-items-center p-0 py-1 px-2 pb-3 justify-content-center">
+                                        <div>
+                                            <button
+                                                class="btn custom-bg-orange custom-fw-600 custom-text-white custom-fs-15 px-4 rounded-pill shadow-lg">Buy
+                                                now</button>
+                                        </div>
+                                        <div>
+                                            <button class="btn">
+                                                <svg width="21" height="21" viewBox="0 0 21 21" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M10 8H12V5H15V3H12V0H10V3H7V5H10V8ZM6 17C4.9 17 4.01 17.9 4.01 19C4.01 20.1 4.9 21 6 21C7.1 21 8 20.1 8 19C8 17.9 7.1 17 6 17ZM16 17C14.9 17 14.01 17.9 14.01 19C14.01 20.1 14.9 21 16 21C17.1 21 18 20.1 18 19C18 17.9 17.1 17 16 17ZM6.17 13.75L6.2 13.63L7.1 12H14.55C15.3 12 15.96 11.59 16.3 10.97L20.16 3.96L18.42 3H18.41L17.31 5L14.55 10H7.53L7.4 9.73L5.16 5L4.21 3L3.27 1H0V3H2L5.6 10.59L4.25 13.04C4.09 13.32 4 13.65 4 14C4 15.1 4.9 16 6 16H18V14H6.42C6.29 14 6.17 13.89 6.17 13.75Z"
+                                                        fill="white" />
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                            
+                            </li>
+                            
+                            <!-- ? ADD OTHER FEATURE PRODUCT SLIDER -->
+                        </ul>
+                        <div class="glide__arrows" data-glide-el="controls">
+                            <button class="glide__arrow glide__arrow--left border-0" data-glide-dir="<">
+                                <svg width="30" height="30" viewBox="0 0 192 336" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M168 24L24 168L168 312" class="custom-stroke-black" stroke-width="48"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                            <button class="glide__arrow glide__arrow--right border-0" data-glide-dir=">">
+                                <svg width="30" height="30" viewBox="0 0 192 336" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M24 312L168 168L24 24" class="custom-stroke-black" stroke-width="48"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-4 text-end">
+                    <a href="#"
+                        class="btn custom-bg-primary custom-text-white custom-fs-15 d-inline-flex align-items-center rounded-pill">
+                        <span class="me-2">View all</span>
+                        <svg width="12" height="12" viewBox="0 0 192 336" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M24 312L168 168L24 24" class="custom-stroke-white" stroke-width="48"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ? FEATURES PRODUCT -->
+    <section class="custom-bg-white">
+        <div class="container-fluid py-5">
+            <div class="row align-items-center mb-4">
+                <h2 class="col-md-4 col-lg-3 custom-fs-35 custom-fw-600">NEW PRODUCT</h2>
+                <div class="col-md-8 col-lg-9">
+                    <div class="w-100 custom-bg-black h-2"></div>
+                    <div class="w-100 custom-bg-black h-2 mt-4"></div>
+                </div>
+            </div>
+            <div>
+                <div id="new-product-slider" class="glide position-relative">
+                    <div class="glide__track" data-glide-el="track">
+                        <ul class="glide__slides m-0">
+                            <!-- ? FIRST NEW PRODUCT SLIDER -->
+                            <li class="glide__slide">
+                                <div class="card">
+                                    <img src="{% static 'front/images/hero-1.jpg' %}" class="card-img-top custom-br-0"
+                                        alt="product image" />
+                                    <div class="card-body custom-bg-primary">
+                                        <h3 class="p-0 m-0 custom-fs-15 custom-fw-600 custom-text-white">Alienware R4
+                                            Gamin Computer 32GB RAM 1TB SSD</h3>
+                                    </div>
+                                    <div
+                                        class="card-body custom-bg-primary d-flex align-items-center p-0 py-1 px-2 pb-3 justify-content-center">
+                                        <div>
+                                            <button
+                                                class="btn custom-bg-orange custom-fw-600 custom-text-white custom-fs-15 px-4 rounded-pill shadow-lg">Buy
+                                                now</button>
+                                        </div>
+                                        <div>
+                                            <button class="btn">
+                                                <svg width="21" height="21" viewBox="0 0 21 21" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M10 8H12V5H15V3H12V0H10V3H7V5H10V8ZM6 17C4.9 17 4.01 17.9 4.01 19C4.01 20.1 4.9 21 6 21C7.1 21 8 20.1 8 19C8 17.9 7.1 17 6 17ZM16 17C14.9 17 14.01 17.9 14.01 19C14.01 20.1 14.9 21 16 21C17.1 21 18 20.1 18 19C18 17.9 17.1 17 16 17ZM6.17 13.75L6.2 13.63L7.1 12H14.55C15.3 12 15.96 11.59 16.3 10.97L20.16 3.96L18.42 3H18.41L17.31 5L14.55 10H7.53L7.4 9.73L5.16 5L4.21 3L3.27 1H0V3H2L5.6 10.59L4.25 13.04C4.09 13.32 4 13.65 4 14C4 15.1 4.9 16 6 16H18V14H6.42C6.29 14 6.17 13.89 6.17 13.75Z"
+                                                        fill="white" />
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- ? ADD OTHER NEW PRODUCT SLIDER -->
+                        </ul>
+                        <div class="glide__arrows" data-glide-el="controls">
+                            <button class="glide__arrow glide__arrow--left border-0" data-glide-dir="<">
+                                <svg width="30" height="30" viewBox="0 0 192 336" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M168 24L24 168L168 312" class="custom-stroke-black" stroke-width="48"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                            <button class="glide__arrow glide__arrow--right border-0" data-glide-dir=">">
+                                <svg width="30" height="30" viewBox="0 0 192 336" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M24 312L168 168L24 24" class="custom-stroke-black" stroke-width="48"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-4 text-end">
+                    <a href="#"
+                        class="btn custom-bg-primary custom-text-white custom-fs-15 d-inline-flex align-items-center rounded-pill">
+                        <span class="me-2">View all</span>
+                        <svg width="12" height="12" viewBox="0 0 192 336" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M24 312L168 168L24 24" class="custom-stroke-white" stroke-width="48"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ? 2 BANNERS -->
+    <section class="custom-bg-white pb-5 my-3">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6 col-lg-6 p-0">
+                    <a href="./shop.html">
+                        <img class="w-100 object-fit-cover max-h-200" src="{% static 'front/images/banner-1.JPG' %}"
+                            alt="banner for shop" />
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-6 p-0">
+                    <a href="./shop.html">
+                        <img class="w-100 object-fit-cover max-h-200" src="{% static 'front/images/banner-2.JPG' %}"
+                            alt="banner for shop" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ? OTHER SERVICES CARD -->
+    <section class="custom-bg-white pb-5">
+        <div class="container-fluid">
+            <div class="row px-2">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 p-0">
+                    <div class="card custom-bc-black custom-br-0">
+                        <div class="card-body text-center">
+                            <img class="size-124" src="{% static 'front/images/services-1.jpg' %}" alt="services card" />
+                            <p class="m-0 mt-2 custom-fw-500 custom-fs-15">Fast Delivery</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 p-0">
+                    <div class="card custom-bc-black custom-br-0">
+                        <div class="card-body text-center">
+                            <img class="size-124" src="{% static 'front/images/services-2.jpg' %}" alt="services card" />
+                            <p class="m-0 mt-2 custom-fw-500 custom-fs-15">Verified Sellers</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 p-0">
+                    <div class="card custom-bc-black custom-br-0 ">
+                        <div class="card-body text-center">
+                            <img class="size-124" src="{% static 'front/images/services-3.jpg' %}" alt="services card" />
+                            <p class="m-0 mt-2 custom-fw-500 custom-fs-15">Secured Payment</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 p-0">
+                    <div class="card custom-bc-black custom-br-0">
+                        <div class="card-body text-center">
+                            <img class="size-124" src="{% static 'front/images/services-4.jpg' %}" alt="services card" />
+                            <p class="m-0 mt-2 custom-fw-500 custom-fs-15">Excellent Customer Service</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ? NEWS LETTER -->
+    <section class="custom-bg-white pb-5">
+        <div class="container max-w-600">
+            <h3 class="text-center custom-text-black custom-fw-600 custom-fs-30">Keep Updated & Get Ultimited Offers
+            </h3>
+            <p class="custom-text-black text-center m-0 mb-3">Sign Up for Updates & Exclusive</p>
+            <form class="d-flex">
+                <input class="form-control custom-br-0 border border-1 custom-bc-black border-end-0 custom-bg-light"
+                    type="email" placeholder="Your email address..." aria-label="Search">
+                <button
+                    class="btn custom-bg-primary custom-text-white custom-fw-500 custom-br-0 border border-1 custom-bc-primary"
+                    type="submit">SUBSCRIBE</button>
+            </form>
+        </div>
+
+        <div class="mt-5 text-center">
+            <a href="#"
+                class="btn custom-bg-primary custom-text-white custom-fs-15 d-inline-flex flex-column align-items-center custom-br-15">
+                <svg style="transform: rotate(270deg);" width="12" height="12" viewBox="0 0 192 336" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M24 312L168 168L24 24" class="custom-stroke-white" stroke-width="48" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+                <span>About Sparkel India</span>
+            </a>
+        </div>
+    </section>
+    <div onclick="closeModal();" class="z-index-999" id="img-modal">
+        <div class="position-absolute text-end top-50 end-0 p-3">
+            <img class="w-50" src="{% static 'front/images/banner-1.JPG' %}" alt="box modal zoomed image" />
+        </div>
+    </div>
+
+    <script src="{% static 'front/js/bootstrap.bundle.js' %}"></script>
+    <script src="{% static 'front/js/glide.min.js' %}"></script>
+    <!-- ? CUSTOM SCRIPT -->
+    <script src="{% static 'front/js/main.js' %}"></script>
+</body>
+
+
+
+{% endblock %}
