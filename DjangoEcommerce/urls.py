@@ -26,7 +26,7 @@ from DjangoEcommerce import settings
 
 urlpatterns = [
     path('',views.home,name='home'),
-
+    path('vendor/',include('vendorApp.urls')),
 
     
     path('admindashboard/',include("DjangoEcommerceApp.adminurls"))
