@@ -3,7 +3,7 @@ from django.http import HttpResponse,HttpResponseRedirect
 from django.contrib.auth import authenticate,login,logout
 from django.contrib import messages
 from django.urls import reverse
-from DjangoEcommerceApp.models import Products
+from DjangoEcommerceApp.models import Products,ProductMedia
 
 # Create your views here.
 def demoPage(request):
@@ -35,8 +35,16 @@ def adminLogoutProcess(request):
 
 
 def home(request):
-    #products = Product.objects.all().filter(is_available=True)
-    #context = {
-        #'products':products
-    #}
-    return render(request,'home.html')
+    products = Products.objects.all().filter(is_active=1)
+    productmedias = ProductMedia.objects.all()
+    
+    # print(products)
+    print(productmedias)
+    context = {
+        'products':products,
+        'productmedias':productmedias
+    }
+    return render(request,'home.html',context)
+
+def banner(request):
+    return render(request,"create_banner.html")

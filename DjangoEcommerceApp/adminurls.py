@@ -19,9 +19,12 @@ from DjangoEcommerceApp import views
 from DjangoEcommerceApp import AdminViews
 from django.conf.urls.static import static
 
+
+
 from DjangoEcommerce import settings
 
 urlpatterns = [
+    path('admin/banner', views.banner,name="banner"),
     path('admin/', views.adminLogin,name="admin_login"),
     path('demo',views.demoPage),
     path('demoPage',views.demoPageTemplate),

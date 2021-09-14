@@ -1,5 +1,6 @@
     <!-- ? NAVBAR -->
     <!-- ? DESKTOP NAVBAR -->
+    {% load static %}
     <section class="d-none d-md-block">
         <div class="border border-1 py-2">
             <div class="container-fluid">
@@ -60,7 +61,7 @@
         <nav class="navbar navbar-expand-md navbar-light custom-bg-light">
             <div class="container-fluid">
                 <a class="navbar-brand" href="./index.html">
-                    <img class="logo" src="./images/logo.JPG" alt="logo image" />
+                    <img class="logo" src="{% static 'front/images/logo.JPG' %}" alt="logo image" />
                 </a>
                 <form class="d-flex w-100 position-relative">
                     <input class="form-control me-2 rounded-pill px-4 py-3" type="search"

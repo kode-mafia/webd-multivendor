@@ -99,10 +99,11 @@
                             <li class="glide__slide">
                             
                                 <div class="card">
-                                    <img src="{% static 'front/images/hero-1.jpg' %}" class="card-img-top custom-br-0"
+                                {% for product in products %}
+                                    <img src="{{ product.media_content.url }}" class="card-img-top custom-br-0"
                                         alt="product image" />
                                     <div class="card-body custom-bg-primary">
-                                        <h3 class="p-0 m-0 custom-fs-15 custom-fw-600 custom-text-white"> sample product</h3>
+                                        <h3 class="p-0 m-0 custom-fs-15 custom-fw-600 custom-text-white"> {{ product.product_name }}</h3>
                                     </div>
                                     <div
                                         class="card-body custom-bg-primary d-flex align-items-center p-0 py-1 px-2 pb-3 justify-content-center">
@@ -122,7 +123,9 @@
                                             </button>
                                         </div>
                                     </div>
+                                    {% endfor %}
                                 </div>
+                                
                             
                             
                             </li>
